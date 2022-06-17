@@ -6,6 +6,7 @@
   width: 80vh;
   transform: translate(-50%, -50%);
   background-color: #EBEDEC;
+box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.25);
 
 }
 

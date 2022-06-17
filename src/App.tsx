@@ -11,7 +11,8 @@ border-style: solid;
 border-color: black;
 margin-top: -25px;
 margin-left: 50px;
-background-color: #2C302F;
+background-color: #3e4442;
+box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.25);
 `
 
 const DisplayWrapper = styled.div`
@@ -53,6 +54,7 @@ const TopButton = styled.button`
   height: 10px;
   background-color: #F6F8F7;
   border-radius: 2px;
+  box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
 `;
 
 const ButtonWrapperTwo = styled.div`
@@ -69,6 +71,7 @@ const ButtonTwo = styled.button`
   border-radius: 2px;
   margin: 8px;
   margin-right: 13px;
+  box-shadow: -4px -4px 15px rgba(0, 0, 0, 0.25);
 `;
 
 const FaderWrapper = styled.div`
@@ -107,6 +110,7 @@ const ScreenButton = styled.button`
   border-radius: 3px;
   margin-top: 3px;
   margin-left: 6px;
+  box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
 `;
 
 const OpenWindowButtonWrapper = styled.div`
@@ -126,6 +130,7 @@ const WindowButton = styled.button`
   margin-top: 3px;
   margin-left: 10px;
   background-color: orange;
+  box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
 `;
 
 const Afterdiv = styled.div`
@@ -167,12 +172,60 @@ margin-left: 13px;
   display: grid;
   grid-template-columns: 30px 30px;
   row-gap: 7px;
+  position: absolute;
 `
 
 const Smalllinediv = styled.div`
 width: 15px;
 height: 1px;
 background-color: #000000;
+`
+const Faderline = styled.div`
+width: 5px;
+height: 100px;
+background-color: #000000;
+position: absolute;
+margin-left: 20px;
+margin-top: -7px ;
+`
+const Faderslider = styled.div`
+background-color: #000000;
+  width: 30px;
+  height: 4px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: grey;
+  border-width: 5px;
+  margin-left: -12px;
+  margin-top: 30px;
+  box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10%; /* NEW */
+`
+
+const DRUMSdiv = styled.div`
+width: 46%;
+height: 65%;
+margin-left: 52%;
+background-color: #aba9a9;
+margin-top: -295px;
+position: fixed;
+grid-template: 30px 30px 30px 30px;
+`
+const DRUMSbutton = styled.button`
+width: 65px;
+height: 65px;
+margin: 7px;
+margin-left: 10px;
+margin-top: 10px;
+background-color: #616161;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
 `
 
 function App() {
@@ -204,7 +257,6 @@ function App() {
           OPEN WINDOW
           <WindowButton></WindowButton>
         </OpenWindowButtonWrapper>
-
         <ButtonWrapperTwo>
           <ButtonTwo></ButtonTwo>
           <ButtonTwo></ButtonTwo>
@@ -230,6 +282,9 @@ function App() {
             <ASSGINdiv>ASSIGN</ASSGINdiv>
           </Afterdiv>
           <Faderlinegrid>
+            <Faderline>
+              <Faderslider></Faderslider>
+            </Faderline>
           <Smalllinediv></Smalllinediv>
           <Smalllinediv></Smalllinediv>
           <Smalllinediv></Smalllinediv>
@@ -254,6 +309,24 @@ function App() {
           <Smalllinediv></Smalllinediv>
           </Faderlinegrid>
          </FaderWrapper>
+         <DRUMSdiv>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+          <DRUMSbutton></DRUMSbutton>
+        </DRUMSdiv>
       </div>
     </div>
   );
