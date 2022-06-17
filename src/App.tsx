@@ -128,7 +128,52 @@ const WindowButton = styled.button`
   background-color: orange;
 `;
 
-  
+const Afterdiv = styled.div`
+display: flex;
+flex-direction: column;
+font-size: 8px;
+justify-content: center;
+margin-left: 22px;
+margin-top: 5px;
+`
+const AFTERButton = styled.button`
+  width: 27px;
+  height: 15px;
+  border-radius: 3px;
+  margin-top: 3px;
+`;
+
+const Aftersvg = styled.svg`
+border-radius: 100%;
+width: 3px;
+height: 3px;
+background-color: #000000;
+margin-left: 13px;
+margin-bottom: 1px;
+margin-top: 1px;
+`
+const ASSGINdiv = styled.div`
+background-color: grey;
+color: black;
+font-size: 6px;
+padding-left: 2px;
+padding-right: 2px;
+margin-right: 23px ;
+margin-top: 2px;
+`
+const Faderlinegrid = styled.div`
+margin-top: 20px;
+margin-left: 13px;
+  display: grid;
+  grid-template-columns: 30px 30px;
+  row-gap: 7px;
+`
+
+const Smalllinediv = styled.div`
+width: 15px;
+height: 1px;
+background-color: #000000;
+`
 
 function App() {
   return (
@@ -178,7 +223,36 @@ function App() {
           <FaderTextWrapper>
             Note Variaton
           </FaderTextWrapper>
-
+          <Afterdiv>
+            AFTER
+            <Aftersvg></Aftersvg>
+            <AFTERButton></AFTERButton>
+            <ASSGINdiv>ASSIGN</ASSGINdiv>
+          </Afterdiv>
+          <Faderlinegrid>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          <Smalllinediv></Smalllinediv>
+          </Faderlinegrid>
          </FaderWrapper>
       </div>
     </div>
