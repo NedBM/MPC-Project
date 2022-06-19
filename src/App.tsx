@@ -123,6 +123,30 @@ const OpenWindowButtonWrapper = styled.div`
   justify-content: center;
 `;
 
+const Wheel = styled.button`
+border-radius: 100% ;
+background-color: black;
+width: 100px;
+height: 100px;
+box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
+`
+
+const WheelWrapper = styled.div`
+  margin-left: 220px;
+  margin-left: 220px;
+  font-size: 6px;
+  margin-top: 50px ;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+`
+
+const Wheellabel = styled.p`
+  font-size: 8px;
+  margin-left: 40px;
+`
+
 const WindowButton = styled.button`
   width: 27px;
   height: 15px;
@@ -257,6 +281,10 @@ function App() {
           OPEN WINDOW
           <WindowButton></WindowButton>
         </OpenWindowButtonWrapper>
+        <WheelWrapper>
+          <Wheellabel>DATA</Wheellabel>
+          <Wheel></Wheel>
+        </WheelWrapper>
         <ButtonWrapperTwo>
           <ButtonTwo></ButtonTwo>
           <ButtonTwo></ButtonTwo>
