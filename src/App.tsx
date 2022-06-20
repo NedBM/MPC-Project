@@ -227,17 +227,45 @@ background-color: #000000;
 `
 
 const DRUMSdiv = styled.div`
-width: 46%;
+width: 44%;
 height: 65%;
-margin-left: 52%;
+margin-left: 55%;
 background-color: #aba9a9;
 margin-top: -295px;
 position: fixed;
-grid-template: 30px 30px 30px 30px;
+grid-template: repeat(4, 1fr);
 `
+
+const Nobsandbuttonswrapper = styled.div`
+width: 44%;
+height: 18%;
+margin-left: 55%;
+background-color: #aba9a9;
+margin-top: -400px;
+position: fixed;
+`
+
+const Specialbuttondiv = styled.div`
+  display: flex;
+  flex-direction: row;
+  font-size: 6px;
+`
+
+const Specialbutton = styled.button`
+width: 25px;
+height: 12px;
+background-color: #F6F8F7;
+margin-left: 20px;
+margin-right: 10px;
+margin-top: 25px;
+border-radius: 2px;
+box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
+`
+
+
 const DRUMSbutton = styled.button`
-width: 65px;
-height: 65px;
+width: 60px;
+height: 60px;
 margin: 7px;
 margin-left: 10px;
 margin-top: 10px;
@@ -355,6 +383,16 @@ function App() {
           <DRUMSbutton></DRUMSbutton>
           <DRUMSbutton></DRUMSbutton>
         </DRUMSdiv>
+        <Nobsandbuttonswrapper>
+        <Specialbuttondiv>
+        <Specialbutton></Specialbutton>
+        <Specialbutton></Specialbutton>
+        </Specialbuttondiv>
+        <Specialbuttondiv>
+        <Specialbutton></Specialbutton>
+        <Specialbutton></Specialbutton>
+        </Specialbuttondiv>
+        </Nobsandbuttonswrapper>
       </div>
     </div>
   );
