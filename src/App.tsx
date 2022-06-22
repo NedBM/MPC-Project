@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import styled from 'styled-components'
-import akailogo from './assets/akailogo.png'
+import akailogo from './assets/akai logo.png'
 
 const ScreenWrapper = styled.div`
 position: absolute;
@@ -262,6 +262,15 @@ margin-top: 25px;
 border-radius: 2px;
 box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
 `
+const Logoimg = styled.img`
+width: 180px;
+height: 40px;
+position:absolute;
+top:0;
+right:0;
+margin-right: 130px;
+margin-top: 10px;
+`
 
 
 const DRUMSbutton = styled.button`
@@ -293,7 +302,7 @@ function App() {
 
           </DisplayWrapper>
         </ScreenWrapper>
-        <img src={akailogo} className="App-logo" alt="logo" />
+        <Logoimg src={akailogo} className="App-logo" alt="logo" />
         <ButtonWrapper>
             <TopButton></TopButton>
             <TopButton></TopButton>
