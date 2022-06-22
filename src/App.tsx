@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import styled from 'styled-components'
+import akailogo from './assets/akailogo.png'
 
 const ScreenWrapper = styled.div`
 position: absolute;
@@ -292,6 +293,7 @@ function App() {
 
           </DisplayWrapper>
         </ScreenWrapper>
+        <img src={akailogo} className="App-logo" alt="logo" />
         <ButtonWrapper>
             <TopButton></TopButton>
             <TopButton></TopButton>
