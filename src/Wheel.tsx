@@ -1,6 +1,11 @@
 import React from 'react';
 // import React from 'react';
 
+export const Wheel = () => {
+  return (
+    <div>Wheel</div>
+  )
+}
 
 
 // class Wheel{
