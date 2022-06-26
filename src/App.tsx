@@ -49,8 +49,25 @@ const ButtonWrapper = styled.div`
   justify-content: space-around;
 `;
 
+const ButtonWrapperTopTitle = styled.div`
+  width: 18px;
+  margin-top: 8px;
+  height: 8px;
+  background-color: grey;
+  color: black;
+  justify-content: center;
+  font-size: 6px;
+  text-align: center;
+  margin-left: 1px;
+`
+
+const ButtonWrapperTopSingle = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
 const TopButton = styled.button`
-  margin-top: 20px;
+  margin-top: 5px;
   width: 20px;
   height: 10px;
   background-color: #F6F8F7;
@@ -58,11 +75,45 @@ const TopButton = styled.button`
   box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
 `;
 
+const ButtonWrapperTwoSingle = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+const ButtonWrapperTwoTitleTop = styled.div`
+  font-size: 6px;
+  color: #000000;
+  justify-content: center;
+  text-align: center;
+  margin-right: 22px;
+  margin-bottom: 3px;
+`
+
+const ButtonWrapperTwoSingleSpecial = styled.div`
+  display: flex;
+  flex-direction: column;
+  font-size: 7px;
+  color: #000000;
+  background-color: grey;
+`
+const ButtonWrapperTwoTitle = styled.div`
+  width: 20px;
+  height: 5px;
+  background-color: grey;
+  color: black;
+  justify-content: center;
+  font-size: 5px;
+  text-align: center;
+  margin-top: 3px;
+
+`
+
 const ButtonWrapperTwo = styled.div`
   width: 128px;
   height: 108px;
   margin-left: 40px;
   margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 `
 
 const ButtonTwo = styled.button`
@@ -70,7 +121,6 @@ const ButtonTwo = styled.button`
   height: 10px;
   background-color: #7B75B2;
   border-radius: 2px;
-  margin: 8px;
   margin-right: 13px;
   box-shadow: -4px -4px 15px rgba(0, 0, 0, 0.25);
 `;
@@ -254,14 +304,35 @@ const Specialbuttondiv = styled.div`
 
 const Specialbutton = styled.button`
 width: 25px;
-height: 12px;
+height: 13px;
 background-color: #F6F8F7;
-margin-left: 20px;
+margin-left: 15px;
 margin-right: 10px;
 margin-top: 25px;
 border-radius: 2px;
 box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
 `
+
+const RecGainnob = styled.div`
+border-radius: 100%;
+width: 25px;
+height: 25px;
+margin-top: 15px;
+border: 2px dotted #ffffff;
+background-color: #651212;
+margin-left: 60px;
+`
+const MainVolumenob = styled.div`
+border-radius: 100%;
+width: 25px;
+height: 25px;
+border: 2px dotted #123455;
+background-color: #ffffff;
+margin-top: 15px;
+margin-left: 30px;
+`
+
+
 const Logoimg = styled.img`
 width: 180px;
 height: 40px;
@@ -304,12 +375,30 @@ function App() {
         </ScreenWrapper>
         <Logoimg src={akailogo} className="App-logo" alt="logo" />
         <ButtonWrapper>
-            <TopButton></TopButton>
-            <TopButton></TopButton>
-            <TopButton></TopButton>
-            <TopButton></TopButton>
-            <TopButton></TopButton>
-            <TopButton></TopButton>
+          <ButtonWrapperTopSingle>
+            <ButtonWrapperTopTitle>F 1</ButtonWrapperTopTitle>
+          <TopButton></TopButton>
+          </ButtonWrapperTopSingle>
+          <ButtonWrapperTopSingle>
+            <ButtonWrapperTopTitle>F 2</ButtonWrapperTopTitle>
+          <TopButton></TopButton>
+          </ButtonWrapperTopSingle>
+          <ButtonWrapperTopSingle>
+            <ButtonWrapperTopTitle>F 3</ButtonWrapperTopTitle>
+          <TopButton></TopButton>
+          </ButtonWrapperTopSingle>
+          <ButtonWrapperTopSingle>
+            <ButtonWrapperTopTitle>F 4</ButtonWrapperTopTitle>
+          <TopButton></TopButton>
+          </ButtonWrapperTopSingle>
+          <ButtonWrapperTopSingle>
+            <ButtonWrapperTopTitle>F 5</ButtonWrapperTopTitle>
+          <TopButton></TopButton>
+          </ButtonWrapperTopSingle>
+          <ButtonWrapperTopSingle>
+            <ButtonWrapperTopTitle>F 6</ButtonWrapperTopTitle>
+          <TopButton></TopButton>
+          </ButtonWrapperTopSingle>
         </ButtonWrapper>
 
         <MainScreenButtonWrapper>
@@ -325,18 +414,65 @@ function App() {
           <Wheel></Wheel>
         </WheelWrapper>
         <ButtonWrapperTwo>
+          <ButtonWrapperTwoSingle>
+            <ButtonWrapperTwoTitleTop>7</ButtonWrapperTwoTitleTop>
           <ButtonTwo></ButtonTwo>
+          <ButtonWrapperTwoTitle>MIXER</ButtonWrapperTwoTitle>
+          </ButtonWrapperTwoSingle>
+          <ButtonWrapperTwoSingle>
+            <ButtonWrapperTwoTitleTop>8</ButtonWrapperTwoTitleTop>
           <ButtonTwo></ButtonTwo>
+          <ButtonWrapperTwoTitle>OTHER</ButtonWrapperTwoTitle>
+          </ButtonWrapperTwoSingle>
+          <ButtonWrapperTwoSingle>
+            <ButtonWrapperTwoTitleTop>9</ButtonWrapperTwoTitleTop>
           <ButtonTwo></ButtonTwo>
+          <ButtonWrapperTwoTitle>MIDI/SYNCH</ButtonWrapperTwoTitle>
+          </ButtonWrapperTwoSingle>
+          <ButtonWrapperTwoSingle>
+            <ButtonWrapperTwoTitleTop>4</ButtonWrapperTwoTitleTop>
           <ButtonTwo></ButtonTwo>
+          <ButtonWrapperTwoTitle>SAMPLE</ButtonWrapperTwoTitle>
+          </ButtonWrapperTwoSingle>
+          <ButtonWrapperTwoSingle>
+            <ButtonWrapperTwoTitleTop>5</ButtonWrapperTwoTitleTop>
           <ButtonTwo></ButtonTwo>
+          <ButtonWrapperTwoTitle>TRIM</ButtonWrapperTwoTitle>
+          </ButtonWrapperTwoSingle>
+          <ButtonWrapperTwoSingle>
+            <ButtonWrapperTwoTitleTop>6</ButtonWrapperTwoTitleTop>
           <ButtonTwo></ButtonTwo>
+          <ButtonWrapperTwoTitle>PROGRAM</ButtonWrapperTwoTitle>
+          </ButtonWrapperTwoSingle>
+          <ButtonWrapperTwoSingle>
+            <ButtonWrapperTwoTitleTop>1</ButtonWrapperTwoTitleTop>
           <ButtonTwo></ButtonTwo>
+          <ButtonWrapperTwoTitle>SONG</ButtonWrapperTwoTitle>
+          </ButtonWrapperTwoSingle>
+          <ButtonWrapperTwoSingle>
+            <ButtonWrapperTwoTitleTop>2</ButtonWrapperTwoTitleTop>
           <ButtonTwo></ButtonTwo>
+          <ButtonWrapperTwoTitle>MISC.</ButtonWrapperTwoTitle>
+          </ButtonWrapperTwoSingle>
+          <ButtonWrapperTwoSingle>
+            <ButtonWrapperTwoTitleTop>3</ButtonWrapperTwoTitleTop>
           <ButtonTwo></ButtonTwo>
+          <ButtonWrapperTwoTitle>LOAD</ButtonWrapperTwoTitle>
+          </ButtonWrapperTwoSingle>
+          <ButtonWrapperTwoSingle>
+            <ButtonWrapperTwoTitleTop>SHIFT</ButtonWrapperTwoTitleTop>
+          <ButtonTwo style={{backgroundColor: '#F6F8F7'}}></ButtonTwo>
+          </ButtonWrapperTwoSingle>
+          <ButtonWrapperTwoSingle>
+            <ButtonWrapperTwoTitleTop>0</ButtonWrapperTwoTitleTop>
           <ButtonTwo></ButtonTwo>
-          <ButtonTwo></ButtonTwo>
-          <ButtonTwo></ButtonTwo>
+          </ButtonWrapperTwoSingle>
+          <ButtonWrapperTwoSingle>
+            <ButtonWrapperTwoTitleTop>ENTER</ButtonWrapperTwoTitleTop>
+          <ButtonTwo style={{backgroundColor: '#F6F8F7'}}></ButtonTwo>
+          <ButtonWrapperTwoTitle>SAVE</ButtonWrapperTwoTitle>
+          </ButtonWrapperTwoSingle>
+
           </ButtonWrapperTwo>
          <FaderWrapper>
           <FaderTextWrapper>
@@ -398,8 +534,14 @@ function App() {
         <Specialbuttondiv>
         <Specialbutton></Specialbutton>
         <Specialbutton></Specialbutton>
+        <RecGainnob></RecGainnob>
+        <MainVolumenob></MainVolumenob>
         </Specialbuttondiv>
         <Specialbuttondiv>
+        <Specialbutton></Specialbutton>
+        <Specialbutton></Specialbutton>
+        <Specialbutton></Specialbutton>
+        <Specialbutton></Specialbutton>
         <Specialbutton></Specialbutton>
         <Specialbutton></Specialbutton>
         </Specialbuttondiv>
