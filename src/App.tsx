@@ -363,6 +363,15 @@ const TapTempoNoteRepeat = styled.button`
   background-color: #ffffff;
   border-radius: 3px;
 `
+const BottomBigButtonWrapper = styled.div`
+display: flex;
+flex-direction: row;
+margin-left: 
+`
+
+const BottomBigButtonWrapperSingle = styled.div`
+justify-content: center;
+`
 
 
 const DRUMSbutton = styled.button`
