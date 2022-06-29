@@ -343,6 +343,27 @@ margin-right: 130px;
 margin-top: 10px;
 `
 
+const TapTempoNoteRepeatWrapper = styled.div`
+ width: 52px;
+  height: 40px;
+  margin-left: 120px;
+  font-size: 6px;
+  margin-top: 150px ;
+  position: absolute;
+  justify-content: center;
+`
+
+const TapTempoNoteRepeat = styled.button`
+  width: 27px;
+  height: 20px;
+  font-size: 6px;
+  margin-top: 5px;
+  margin-left: 5px;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 3px;
+`
+
 
 const DRUMSbutton = styled.button`
 width: 60px;
@@ -413,6 +434,10 @@ function App() {
           <Wheellabel>DATA</Wheellabel>
           <Wheel></Wheel>
         </WheelWrapper>
+        <TapTempoNoteRepeatWrapper>
+           TAP TEMPO NOTE REPEAT
+          <TapTempoNoteRepeat></TapTempoNoteRepeat>
+        </TapTempoNoteRepeatWrapper>
         <ButtonWrapperTwo>
           <ButtonWrapperTwoSingle>
             <ButtonWrapperTwoTitleTop>7</ButtonWrapperTwoTitleTop>
