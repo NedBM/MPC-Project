@@ -32,6 +32,7 @@ const Display = styled.div`
 position: absolute;
 width: 177px;
 height: 48px;
+padding: 3px;
 margin-top: 13px;
 margin-left: 36px;
 background-color: #CCE0E7;
@@ -365,12 +366,25 @@ const TapTempoNoteRepeat = styled.button`
 `
 const BottomBigButtonWrapper = styled.div`
 display: flex;
+position: absolute;
 flex-direction: row;
-margin-left: 
+margin-left: 110px;
+margin-top: -30px;
 `
 
 const BottomBigButtonWrapperSingle = styled.div`
 justify-content: center;
+`
+
+const BottomBigButton = styled.button`
+  width: 27px;
+  height: 20px;
+  font-size: 6px;
+  margin-top: 5px;
+  margin-left: 15px;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 3px;
 `
 
 
@@ -506,7 +520,6 @@ function App() {
           <ButtonTwo style={{backgroundColor: '#F6F8F7'}}></ButtonTwo>
           <ButtonWrapperTwoTitle>SAVE</ButtonWrapperTwoTitle>
           </ButtonWrapperTwoSingle>
-
           </ButtonWrapperTwo>
          <FaderWrapper>
           <FaderTextWrapper>
@@ -546,6 +559,23 @@ function App() {
           <Smalllinediv></Smalllinediv>
           </Faderlinegrid>
          </FaderWrapper>
+         <BottomBigButtonWrapper>
+           <BottomBigButtonWrapperSingle>
+           <BottomBigButton style={{backgroundColor:'#82312D'}}></BottomBigButton>
+           </BottomBigButtonWrapperSingle>
+           <BottomBigButtonWrapperSingle>
+           <BottomBigButton style={{backgroundColor:'#82312D'}}></BottomBigButton>
+           </BottomBigButtonWrapperSingle>
+           <BottomBigButtonWrapperSingle>
+           <BottomBigButton></BottomBigButton>
+           </BottomBigButtonWrapperSingle>
+           <BottomBigButtonWrapperSingle>
+           <BottomBigButton></BottomBigButton>
+           </BottomBigButtonWrapperSingle>
+           <BottomBigButtonWrapperSingle>
+           <BottomBigButton></BottomBigButton>
+           </BottomBigButtonWrapperSingle>
+          </BottomBigButtonWrapper>
          <DRUMSdiv>
           <DRUMSbutton></DRUMSbutton>
           <DRUMSbutton></DRUMSbutton>
