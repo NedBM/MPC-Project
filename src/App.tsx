@@ -364,11 +364,49 @@ const TapTempoNoteRepeat = styled.button`
   background-color: #ffffff;
   border-radius: 3px;
 `
+
+const TwoMediumButtonWrapper = styled.div`
+  margin-left: 90px;
+  font-size: 6px;
+  margin-top: 200px ;
+  position: absolute;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+`;
+
+const SingleMediumButtonWrapper = styled.div`
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  font-size: 6px;
+  margin-left: 15px;
+`
+
+const MediumButtonLabel = styled.p`
+font-size: 6px;
+justify-content: center;
+  text-align: center;
+  width: 20px;
+  height: 10px;
+`
+
+const MediumButtom = styled.button`
+  width: 27px;
+  height: 15px;
+  border-radius: 3px;
+  margin-top: 3px;
+  box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
+`
+
+
+
+
 const BottomBigButtonWrapper = styled.div`
 display: flex;
 position: absolute;
 flex-direction: row;
-margin-left: 110px;
+margin-left: 90px;
 margin-top: -30px;
 font-size: 6px;
 `
@@ -473,6 +511,17 @@ function App() {
            TAP TEMPO NOTE REPEAT
           <TapTempoNoteRepeat></TapTempoNoteRepeat>
         </TapTempoNoteRepeatWrapper>
+        <TwoMediumButtonWrapper>
+        <SingleMediumButtonWrapper>
+          <MediumButtonLabel>UNDO SEQ</MediumButtonLabel>
+          <MediumButtom></MediumButtom>
+        </SingleMediumButtonWrapper>
+        <SingleMediumButtonWrapper>
+        <MediumButtonLabel>ERASE</MediumButtonLabel>
+          <MediumButtom></MediumButtom>
+        </SingleMediumButtonWrapper>
+        </TwoMediumButtonWrapper>
+
         <ButtonWrapperTwo>
           <ButtonWrapperTwoSingle>
             <ButtonWrapperTwoTitleTop>7</ButtonWrapperTwoTitleTop>
