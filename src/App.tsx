@@ -370,17 +370,29 @@ position: absolute;
 flex-direction: row;
 margin-left: 110px;
 margin-top: -30px;
+font-size: 6px;
 `
 
 const BottomBigButtonWrapperSingle = styled.div`
 justify-content: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+  text-align: center;
+`
+const BottomBigButtonlabel = styled.p`
+font-size: 6px;
+justify-content: center;
+  text-align: center;
+  margin-left: 18px;
+  width: 20px;
+  height: 10px;
 `
 
 const BottomBigButton = styled.button`
   width: 27px;
   height: 20px;
-  font-size: 6px;
-  margin-top: 5px;
+  margin-top: 0px;
   margin-left: 15px;
   justify-content: center;
   background-color: #ffffff;
@@ -561,18 +573,23 @@ function App() {
          </FaderWrapper>
          <BottomBigButtonWrapper>
            <BottomBigButtonWrapperSingle>
+             <BottomBigButtonlabel>REC</BottomBigButtonlabel>
            <BottomBigButton style={{backgroundColor:'#82312D'}}></BottomBigButton>
            </BottomBigButtonWrapperSingle>
            <BottomBigButtonWrapperSingle>
+           <BottomBigButtonlabel>OVER DUB</BottomBigButtonlabel>
            <BottomBigButton style={{backgroundColor:'#82312D'}}></BottomBigButton>
            </BottomBigButtonWrapperSingle>
            <BottomBigButtonWrapperSingle>
+           <BottomBigButtonlabel>STOP</BottomBigButtonlabel>
            <BottomBigButton></BottomBigButton>
            </BottomBigButtonWrapperSingle>
            <BottomBigButtonWrapperSingle>
+           <BottomBigButtonlabel>PLAY</BottomBigButtonlabel>
            <BottomBigButton></BottomBigButton>
            </BottomBigButtonWrapperSingle>
            <BottomBigButtonWrapperSingle>
+           <BottomBigButtonlabel>PLAY START</BottomBigButtonlabel>
            <BottomBigButton></BottomBigButton>
            </BottomBigButtonWrapperSingle>
           </BottomBigButtonWrapper>
