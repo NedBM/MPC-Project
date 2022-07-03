@@ -5,12 +5,12 @@ import akailogo from './assets/akai logo.png'
 import CursorLeft from './assets/LeftButtonCursor.svg'
 import CursorRight from './assets/RightButtonCursor.svg'
 import CursorBottom from './assets/BottomButtonCursor.svg'
-import CursorTop from './assets/TopButtonCursor.svg'
+import CursorTop from './assets/TopBottomCursor.svg'
 
 const Cursordiv = styled.div`
-position: absolute;
-margin-left: 200px;
-margin-top: 100px;
+  position: absolute;
+  margin-top: 185px;
+  margin-left: 235px;
 `
 
 const ScreenWrapper = styled.div`
@@ -532,10 +532,16 @@ function App() {
         </SingleMediumButtonWrapper>
         </TwoMediumButtonWrapper>
         <Cursordiv>
-          <CursorLeft/>
-          <CursorRight/>
-          <CursorTop/>
-          <CursorBottom/>
+        <svg width="70" height="49" viewBox="0 0 89 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 63.5V5C1 2.79086 2.79086 1 5 1H27.5L34 34.5L28.75 51L23.5 67.5H5C2.79086 67.5 1 65.7091 1 63.5Z" fill="#EFEFEF" stroke="black"/>
+<path d="M13 45.5L8 35L13 24.5" stroke="black"/>
+<path d="M88 63.5V5C88 2.79086 86.2091 1 84 1H61.5L55 34.5L60.25 51L65.5 67.5H84C86.2091 67.5 88 65.7091 88 63.5Z" fill="#EFEFEF" stroke="black"/>
+<path d="M76 45.5L81 35L76 24.5" stroke="black"/>
+<path d="M54.5 34H33.5L23 1H65.5L54.5 34Z" fill="#EFEFEF" stroke="black"/>
+<path d="M53 17.5L43.5 9.5L34 17.5" stroke="black"/>
+<path d="M54.5 35H33.5L23 68H65.5L54.5 35Z" fill="#EFEFEF" stroke="black"/>
+<path d="M53 51L43.5 59L34 51" stroke="black"/>
+</svg>
         </Cursordiv>
 
         <ButtonWrapperTwo>
