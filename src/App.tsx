@@ -2,6 +2,16 @@ import React from 'react';
 import './App.css';
 import styled from 'styled-components'
 import akailogo from './assets/akai logo.png'
+import CursorLeft from './assets/LeftButtonCursor.svg'
+import CursorRight from './assets/RightButtonCursor.svg'
+import CursorBottom from './assets/BottomButtonCursor.svg'
+import CursorTop from './assets/TopButtonCursor.svg'
+
+const Cursordiv = styled.div`
+position: absolute;
+margin-left: 200px;
+margin-top: 100px;
+`
 
 const ScreenWrapper = styled.div`
 position: absolute;
@@ -521,6 +531,12 @@ function App() {
           <MediumButtom></MediumButtom>
         </SingleMediumButtonWrapper>
         </TwoMediumButtonWrapper>
+        <Cursordiv>
+          <CursorLeft/>
+          <CursorRight/>
+          <CursorTop/>
+          <CursorBottom/>
+        </Cursordiv>
 
         <ButtonWrapperTwo>
           <ButtonWrapperTwoSingle>
