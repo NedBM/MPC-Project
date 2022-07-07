@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import styled from 'styled-components'
 import akailogo from './assets/akai logo.png'
-import CursorLeft from './assets/LeftButtonCursor.svg'
-import CursorRight from './assets/RightButtonCursor.svg'
-import CursorBottom from './assets/BottomButtonCursor.svg'
-import CursorTop from './assets/TopBottomCursor.svg'
+// import CursorLeft from './assets/LeftButtonCursor.svg'
+// import CursorRight from './assets/RightButtonCursor.svg'
+// import CursorBottom from './assets/BottomButtonCursor.svg'
+// import CursorTop from './assets/TopBottomCursor.svg'
 
 const Cursordiv = styled.div`
   position: absolute;
@@ -409,7 +409,41 @@ const MediumButtom = styled.button`
   box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
 `
 
+const BottomSmallButtonWrapper = styled.div`
+display: flex;
+position: absolute;
+flex-direction: row;
+margin-left: 90px;
+margin-top: -70px;
+font-size: 6px;
+`
 
+const BottomSmallButtonWrapperSingle = styled.div`
+justify-content: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+`
+
+const BottomSmallButtonlabel = styled.p`
+font-size: 6px;
+justify-content: center;
+  text-align: center;
+  margin-left: 18px;
+  width: 20px;
+  height: 10px;
+`
+
+const BottomSmallButton = styled.button`
+ width: 27px;
+  height: 15px;
+  margin-top: 0px;
+  margin-left: 15px;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 3px;
+`
 
 
 const BottomBigButtonWrapper = styled.div`
@@ -642,6 +676,28 @@ function App() {
           <Smalllinediv></Smalllinediv>
           </Faderlinegrid>
          </FaderWrapper>
+         <BottomSmallButtonWrapper>
+         <BottomSmallButtonWrapperSingle>
+         <BottomSmallButtonlabel>Step</BottomSmallButtonlabel>
+         <BottomSmallButton></BottomSmallButton>
+         </BottomSmallButtonWrapperSingle>
+         '<BottomSmallButtonWrapperSingle>
+         <BottomSmallButtonlabel>Step</BottomSmallButtonlabel>
+         <BottomSmallButton></BottomSmallButton>
+         </BottomSmallButtonWrapperSingle>
+         <BottomSmallButtonWrapperSingle>
+         <BottomSmallButtonlabel>GO TO</BottomSmallButtonlabel>
+         <BottomSmallButton></BottomSmallButton>
+         </BottomSmallButtonWrapperSingle>
+         <BottomSmallButtonWrapperSingle>
+         <BottomSmallButtonlabel>Bar</BottomSmallButtonlabel>
+         <BottomSmallButton></BottomSmallButton>
+         </BottomSmallButtonWrapperSingle>
+         <BottomSmallButtonWrapperSingle>
+         <BottomSmallButtonlabel>Bar</BottomSmallButtonlabel>
+         <BottomSmallButton></BottomSmallButton>
+         </BottomSmallButtonWrapperSingle>
+         </BottomSmallButtonWrapper>
          <BottomBigButtonWrapper>
            <BottomBigButtonWrapperSingle>
              <BottomBigButtonlabel>REC</BottomBigButtonlabel>
