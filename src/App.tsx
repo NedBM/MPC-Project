@@ -9,8 +9,8 @@ import akailogo from './assets/akai logo.png'
 
 const Cursordiv = styled.div`
   position: absolute;
-  margin-top: 185px;
-  margin-left: 235px;
+  margin-top: 190px;
+  margin-left: 229px;
 `
 
 const ScreenWrapper = styled.div`
@@ -89,13 +89,15 @@ const TopButton = styled.button`
 const ButtonWrapperTwoSingle = styled.div`
   display: flex;
   flex-direction: column;
+  margin-right: 8px;
+
 `
 const ButtonWrapperTwoTitleTop = styled.div`
   font-size: 6px;
   color: #000000;
   justify-content: center;
   text-align: center;
-  margin-right: 22px;
+  margin-right: 15px;
   margin-bottom: 3px;
 `
 
@@ -122,7 +124,7 @@ const ButtonWrapperTwo = styled.div`
   width: 128px;
   height: 108px;
   margin-left: 40px;
-  margin-top: 15px;
+  margin-top: 12px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 `
@@ -188,14 +190,14 @@ const OpenWindowButtonWrapper = styled.div`
 const Wheel = styled.button`
 border-radius: 100% ;
 background-color: black;
-width: 100px;
-height: 100px;
+width: 95px;
+height: 95px;
 box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
 `
 
 const WheelWrapper = styled.div`
   margin-left: 220px;
-  margin-left: 220px;
+  margin-left: 215px;
   font-size: 6px;
   margin-top: 50px ;
   position: absolute;
@@ -206,7 +208,7 @@ const WheelWrapper = styled.div`
 
 const Wheellabel = styled.p`
   font-size: 8px;
-  margin-left: 40px;
+  margin-left: 38px;
 `
 
 const WindowButton = styled.button`
@@ -415,7 +417,7 @@ display: flex;
 position: absolute;
 flex-direction: row;
 margin-left: 90px;
-margin-top: -70px;
+margin-top: -95px;
 font-size: 6px;
 `
 
@@ -440,7 +442,7 @@ const BottomSmallButton = styled.button`
  width: 27px;
   height: 15px;
   margin-top: 0px;
-  margin-left: 15px;
+  margin-left: 17px;
   justify-content: center;
   background-color: #ffffff;
   border-radius: 3px;
@@ -452,7 +454,7 @@ display: flex;
 position: absolute;
 flex-direction: row;
 margin-left: 90px;
-margin-top: -30px;
+margin-top: -40px;
 font-size: 6px;
 `
 
@@ -476,7 +478,7 @@ const BottomBigButton = styled.button`
   width: 27px;
   height: 20px;
   margin-top: 0px;
-  margin-left: 15px;
+  margin-left: 17px;
   justify-content: center;
   background-color: #ffffff;
   border-radius: 3px;
