@@ -138,8 +138,8 @@ const ButtonTwo = styled.button`
 
 const FaderWrapper = styled.div`
   width: 73px;
-  height: 174px;
-  margin-left: 22px;
+  height: 210px;
+  margin-left: 13px;
   margin-top: 20px;
   border: 1px;
   border-style: solid;
@@ -226,6 +226,7 @@ font-size: 8px;
 justify-content: center;
 margin-left: 22px;
 margin-top: 5px;
+margin-bottom: 15px;
 `
 const AFTERButton = styled.button`
   width: 27px;
@@ -257,18 +258,18 @@ margin-top: 20px;
 margin-left: 13px;
   display: grid;
   grid-template-columns: 30px 30px;
-  row-gap: 7px;
+  row-gap: 9px;
   position: absolute;
 `
 
 const Smalllinediv = styled.div`
 width: 15px;
-height: 1px;
+height: .5px;
 background-color: #000000;
 `
 const Faderline = styled.div`
 width: 5px;
-height: 100px;
+height: 110px;
 background-color: #000000;
 position: absolute;
 margin-left: 20px;
@@ -276,13 +277,13 @@ margin-top: -7px ;
 `
 const Faderslider = styled.div`
 background-color: #000000;
-  width: 30px;
-  height: 4px;
+  width: 40px;
+  height: 3px;
   border-top-style: solid;
   border-bottom-style: solid;
   border-color: grey;
-  border-width: 5px;
-  margin-left: -12px;
+  border-width: 9px;
+  margin-left: -17px;
   margin-top: 30px;
   box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10%; /* NEW */
