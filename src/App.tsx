@@ -490,7 +490,7 @@ const BottomBigButton = styled.button`
 const DrumsBigTitlediv = styled.div`
 width: 280px;
 height: 8px;
-border-top: 1px solid #000000;
+border-top: 1px solid #2e2e2e8a;
 position: absolute;
 font-size: 6px; 
 margin-left: 15px;
@@ -500,7 +500,7 @@ margin-top: 7px;
 const DrumsBigTitle = styled.p`
   width: 30px;
   height: 10px;
-  background-color: #EBEDEC;
+  background-color: #e4e4e4;
   text-align: center;
   margin-left: 140px;
   margin-top: 3px;

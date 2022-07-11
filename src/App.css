@@ -3,7 +3,8 @@
   top: 50%;
   left: 50%;
   height: 58.4vh;
-  width: 80vh;
+  width: 110vh;
+  height: 48vw;
   transform: translate(-50%, -50%);
   background-color: #EBEDEC;
 box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.25);
