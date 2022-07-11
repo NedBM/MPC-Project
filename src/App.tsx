@@ -487,6 +487,30 @@ const BottomBigButton = styled.button`
   border-radius: 3px;
 `
 
+const DrumsBigTitlediv = styled.div`
+width: 280px;
+height: 8px;
+border-top: 1px solid #000000;
+position: absolute;
+font-size: 6px; 
+margin-left: 15px;
+margin-top: 7px;
+`
+
+const DrumsBigTitle = styled.p`
+  width: 30px;
+  height: 10px;
+  background-color: #EBEDEC;
+  text-align: center;
+  margin-left: 140px;
+  margin-top: 3px;
+  z-index: 4;
+  font-size: 6px;
+  background-color: #aba9a9;
+  position: absolute;
+`
+
+
 
 const DRUMSbutton = styled.button`
 width: 55px;
@@ -745,6 +769,8 @@ function App() {
            </BottomBigButtonWrapperSingle>
           </BottomBigButtonWrapper>
          <DRUMSdiv>
+           <DrumsBigTitle>DRUMS</DrumsBigTitle>
+         <DrumsBigTitlediv></DrumsBigTitlediv>
            <DRUMSsinglediv>
              <DRUMSsinglediv2>
              <DRUMStitle>PAD 13</DRUMStitle>
