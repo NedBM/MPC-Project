@@ -90,7 +90,6 @@ const ButtonWrapperTwoSingle = styled.div`
   display: flex;
   flex-direction: column;
   margin-right: 8px;
-
 `
 const ButtonWrapperTwoTitleTop = styled.div`
   font-size: 6px;
@@ -292,17 +291,21 @@ background-color: #000000;
 `
 
 const DRUMSdiv = styled.div`
-width: 44%;
-height: 65%;
+width: 275px;
+padding: 20px;
+padding-left: 25px;
+padding-top: 10px;
+height: 55%;
 margin-left: 55%;
 background-color: #aba9a9;
 margin-top: -295px;
 position: fixed;
-grid-template: repeat(4, 1fr);
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 `
 
 const Nobsandbuttonswrapper = styled.div`
-width: 44%;
+width: 320px;
 height: 18%;
 margin-left: 55%;
 background-color: #aba9a9;
@@ -486,11 +489,8 @@ const BottomBigButton = styled.button`
 
 
 const DRUMSbutton = styled.button`
-width: 60px;
-height: 60px;
-margin: 7px;
-margin-left: 10px;
-margin-top: 10px;
+width: 55px;
+height: 55px;
 background-color: #616161;
 background-image:
 radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
@@ -501,6 +501,27 @@ background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
 background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.25);
 `
+const DRUMSsinglediv = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+const DRUMSsinglediv2 = styled.div`
+display: flex;
+flex-direction: row;
+`
+
+const DRUMStitle = styled.p`
+  font-size: 5px;
+  display: flex;
+`
+
+const DRUMStitle2 = styled.p`
+  font-size: 5px;
+  color: white;
+  margin-left: 28px;
+  display: flex;
+`
+  
 
 function App() {
   return (
@@ -724,22 +745,118 @@ function App() {
            </BottomBigButtonWrapperSingle>
           </BottomBigButtonWrapper>
          <DRUMSdiv>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
-          <DRUMSbutton></DRUMSbutton>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 13</DRUMStitle>
+           <DRUMStitle2>YZ</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 14</DRUMStitle>
+           <DRUMStitle2>&#</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 15</DRUMStitle>
+           <DRUMStitle2>- !</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 16</DRUMStitle>
+           <DRUMStitle2>'( )'</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 9</DRUMStitle>
+           <DRUMStitle2>QR</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 10</DRUMStitle>
+           <DRUMStitle2>ST</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 11</DRUMStitle>
+           <DRUMStitle2>UV</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 12</DRUMStitle>
+           <DRUMStitle2>WX</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 5</DRUMStitle>
+           <DRUMStitle2>IJ</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 6</DRUMStitle>
+           <DRUMStitle2>KL</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 7</DRUMStitle>
+           <DRUMStitle2>MN</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 8</DRUMStitle>
+           <DRUMStitle2>OP</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 1</DRUMStitle>
+           <DRUMStitle2>AB</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 2</DRUMStitle>
+           <DRUMStitle2>CD</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 3</DRUMStitle>
+           <DRUMStitle2>EF</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
+           <DRUMSsinglediv>
+             <DRUMSsinglediv2>
+             <DRUMStitle>PAD 4</DRUMStitle>
+           <DRUMStitle2>GH</DRUMStitle2>
+             </DRUMSsinglediv2>
+             <DRUMSbutton></DRUMSbutton>
+           </DRUMSsinglediv>
         </DRUMSdiv>
         <Nobsandbuttonswrapper>
         <Specialbuttondiv>
