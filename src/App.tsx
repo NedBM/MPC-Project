@@ -28,23 +28,37 @@ box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.25);
 
 const DisplayWrapper = styled.div`
 position: absolute;
-width: 250px;
+width: 230px;
 height: 80px;
 border: 2px;
 border-style: solid;
 border-color: black;
 margin-top: 16px;
 margin-left: 28px;
+padding-left: 19px;
 background-color: black;
+font-size: 8px;
+color: white;
+display: flex;
+flex-direction: row;
 `;
+
+const DipslayNumbers = styled.div`
+color: white;
+font-size: 8px;
+display: flex;
+flex-direction: row;
+margin-left: 22px;
+margin-top: 70px;
+`
 
 const Display = styled.div`
 position: absolute;
-width: 177px;
-height: 48px;
+width: 190px;
+height: 35px;
 padding: 3px;
-margin-top: 13px;
-margin-left: 36px;
+margin-top: 20px;
+margin-left: 9px;
 background-color: #CCE0E7;
 color: #7F89BA;
 font-family: 'Press Start 2P', cursive;
@@ -100,13 +114,6 @@ const ButtonWrapperTwoTitleTop = styled.div`
   margin-bottom: 3px;
 `
 
-const ButtonWrapperTwoSingleSpecial = styled.div`
-  display: flex;
-  flex-direction: column;
-  font-size: 7px;
-  color: #000000;
-  background-color: grey;
-`
 const ButtonWrapperTwoTitle = styled.div`
   width: 20px;
   height: 5px;
@@ -131,7 +138,7 @@ const ButtonWrapperTwo = styled.div`
 const ButtonTwo = styled.button`
   width: 20px;
   height: 10px;
-  background-color: #7B75B2;
+  background-color: #0d017b;
   border-radius: 2px;
   margin-right: 13px;
   box-shadow: -4px -4px 15px rgba(0, 0, 0, 0.25);
@@ -198,7 +205,7 @@ const WheelWrapper = styled.div`
   margin-left: 220px;
   margin-left: 215px;
   font-size: 6px;
-  margin-top: 50px ;
+  margin-top: 30px ;
   position: absolute;
   justify-content: center;
   display: flex;
@@ -553,10 +560,27 @@ function App() {
       <div className="Outline">
         <ScreenWrapper>
           <DisplayWrapper>
+            <DipslayNumbers>
+              F1
+            </DipslayNumbers>
+            <DipslayNumbers>
+              F2
+              </DipslayNumbers>
+              <DipslayNumbers>
+              F3
+              </DipslayNumbers>
+              <DipslayNumbers>
+              F4
+              </DipslayNumbers>
+              <DipslayNumbers>
+              F5
+              </DipslayNumbers>
+              <DipslayNumbers>
+              F6
+              </DipslayNumbers>
             <Display>
               Start
             </Display>
-
           </DisplayWrapper>
         </ScreenWrapper>
         <Logoimg src={akailogo} className="App-logo" alt="logo" />
@@ -640,7 +664,7 @@ function App() {
           <ButtonWrapperTwoSingle>
             <ButtonWrapperTwoTitleTop>9</ButtonWrapperTwoTitleTop>
           <ButtonTwo></ButtonTwo>
-          <ButtonWrapperTwoTitle>MIDI/SYNCH</ButtonWrapperTwoTitle>
+          <ButtonWrapperTwoTitle style={{letterSpacing: -1}}>MIDI/SYNCH</ButtonWrapperTwoTitle>
           </ButtonWrapperTwoSingle>
           <ButtonWrapperTwoSingle>
             <ButtonWrapperTwoTitleTop>4</ButtonWrapperTwoTitleTop>
@@ -655,7 +679,7 @@ function App() {
           <ButtonWrapperTwoSingle>
             <ButtonWrapperTwoTitleTop>6</ButtonWrapperTwoTitleTop>
           <ButtonTwo></ButtonTwo>
-          <ButtonWrapperTwoTitle>PROGRAM</ButtonWrapperTwoTitle>
+          <ButtonWrapperTwoTitle style={{letterSpacing: -1}}>PROGRAM</ButtonWrapperTwoTitle>
           </ButtonWrapperTwoSingle>
           <ButtonWrapperTwoSingle>
             <ButtonWrapperTwoTitleTop>1</ButtonWrapperTwoTitleTop>
@@ -673,8 +697,8 @@ function App() {
           <ButtonWrapperTwoTitle>LOAD</ButtonWrapperTwoTitle>
           </ButtonWrapperTwoSingle>
           <ButtonWrapperTwoSingle>
-            <ButtonWrapperTwoTitleTop>SHIFT</ButtonWrapperTwoTitleTop>
-          <ButtonTwo style={{backgroundColor: '#F6F8F7'}}></ButtonTwo>
+            <ButtonWrapperTwoTitleTop style={{backgroundColor: 'grey', paddingBottom: 15, paddingRight: 5,  marginLeft: -5, paddingLeft: 7, position: 'absolute', marginTop: 3}}>SHIFT</ButtonWrapperTwoTitleTop>
+          <ButtonTwo style={{backgroundColor: '#F6F8F7', zIndex: '5', marginTop: 10}}></ButtonTwo>
           </ButtonWrapperTwoSingle>
           <ButtonWrapperTwoSingle>
             <ButtonWrapperTwoTitleTop>0</ButtonWrapperTwoTitleTop>
